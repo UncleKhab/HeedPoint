@@ -65,4 +65,4 @@ class Project(models.Model):
     dead_line = models.DateField(null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return f"{self.id} - {self.title}"
